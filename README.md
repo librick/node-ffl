@@ -12,9 +12,9 @@ Written by [Eric McDonald](https://juniperspring.xyz).
 ## Usage
 
 Clone this repo and CD into its root directory.
-Then build the Dockerfile:
+Then build the Dockerfile:  
 `docker build -t node-ffl:latest .`
-Create an environment variable file:
+Create an environment variable file:  
 `vim production.env`
 
 The Docker container is set up to output CSV files to the `/home/node/app/output` directory _within_ the container.
@@ -23,7 +23,7 @@ You can specify a volume (using the `-v` command) to map this directory to a dir
 The `docker run` command below mounts this directory to an `ffl-output` directory within host user's home directory.
 If you don't provide such a volume, the node process within the container will most likely fail to write any CSV output files as it won't have write access to the `/home/node/app/output` directory.
 
-Run the image:
+Run the image:  
 `docker run --env-file=production.env -v ~/ffl-output:/home/node/app/output -it --rm node-ffl:latest`
 
 ## Security
