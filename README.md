@@ -20,7 +20,7 @@ Create an environment variable file:
 The Docker container is set up to output CSV files to the `/home/node/app/output` directory _within_ the container.
 You can specify a volume (using the `-v` command) to map this directory to a directory on the host.
 
-The `docker run` command below mounts this directory to an `ffl-output` directory within host user's home directory.
+The `docker run` command below mounts this directory to an `ffl-output` directory within the host user's home directory.
 If you don't provide such a volume, the node process within the container will most likely fail to write any CSV output files as it won't have write access to the `/home/node/app/output` directory.
 
 Run the image:  
