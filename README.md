@@ -13,7 +13,7 @@ Written by [Eric McDonald](https://juniperspring.xyz).
 
 Clone this repo and CD into its root directory.
 Then build the Dockerfile:  
-`docker build -t node-ffl:latest .`
+`docker build -t node-ffl:latest .`  
 Create an environment variable file:  
 `vim production.env`
 
