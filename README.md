@@ -1,6 +1,6 @@
 # Node FFL
 
-A bot for affiliate banks of First Mutual Holding Co.  
+A bot for affiliate banks of First Mutual Holding Co.
 See: [https://firstmutualholding.com/](https://firstmutualholding.com/).
 
 Written for Node.js with TypeScript and designed to be Docker native.  
